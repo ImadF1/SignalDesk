@@ -16,15 +16,6 @@ What the agent does:
 4. summarizes each source with Ollama
 5. writes a final research report
 
-## Why This Project Is Strong For Recruiters
-
-- shows real agent orchestration with `LangGraph`
-- uses live web search instead of static prompts
-- demonstrates source grounding and report synthesis
-- runs locally with `Ollama`
-- produces reusable markdown reports
-- now includes a native desktop app for topic input, live progress, source inspection, and report preview
-
 ## Stack
 
 - Python
