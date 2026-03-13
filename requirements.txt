@@ -1,0 +1,6 @@
+langchain-core>=0.3,<1
+langchain-ollama>=0.3,<1
+langgraph>=1.0,<2
+python-dotenv>=1.0,<2
+rich>=13,<15
+tavily-python>=0.7,<1

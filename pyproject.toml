@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signaldesk"
+version = "0.1.0"
+description = "SignalDesk is an autonomous AI research agent with LangGraph, Ollama, and Tavily search."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain-core>=0.3,<1",
+    "langchain-ollama>=0.3,<1",
+    "langgraph>=1.0,<2",
+    "python-dotenv>=1.0,<2",
+    "rich>=13,<15",
+    "tavily-python>=0.7,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3,<9",
+]
+
+[project.scripts]
+signaldesk = "ai_research_agent.main:main"
+signaldesk-desktop = "ai_research_agent.desktop_ui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
